@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tejedores de Ideas</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+ --morado:#4a2e58;
+ --lila:#8e5aa0;
+ --claro:#f4eff7;
+ --crema:#faf8f2;
+}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:var(--crema);color:#33283a}
+header{background:var(--morado);padding:17px 8%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:23px;font-weight:800;color:white}
+.logo span{color:#d8b8e5}
+nav{display:flex;gap:25px}
+nav a{color:white;text-decoration:none;font-size:13px;transition:.3s}
+nav a:hover{color:#e1b8ed}
+.hero{min-height:550px;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 10%;color:white;background:linear-gradient(#301d38bb,#301d38bb),url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1600&q=85') center/cover}
+.hero-content{max-width:850px}
+.hero h1{font-size:clamp(38px,6vw,65px);line-height:1.2;margin-bottom:20px}
+.hero h1 span{color:#e1b8ed}
+.hero p{line-height:1.9;color:#eee5f1}
+.slogan{color:#e6c5f0!important;font-weight:600;margin-bottom:15px}
+.btn{display:inline-block;background:var(--lila);color:white;padding:14px 28px;border-radius:30px;text-decoration:none;margin-top:25px;font-weight:600;transition:.3s}
+.btn:hover{background:white;color:var(--morado);transform:translateY(-4px)}
+section{padding:75px 9%}
+.title{text-align:center;margin-bottom:40px}
+.title h2{font-size:34px;color:var(--morado)}
+.line{width:65px;height:4px;background:var(--lila);margin:15px auto;border-radius:10px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about img{width:100%;height:340px;object-fit:cover;border-radius:22px}
+.about h2{font-size:30px;color:var(--morado);margin-bottom:15px}
+.about p{line-height:1.9;color:#655b6a;margin-bottom:15px}
+.products-section{background:var(--claro)}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:23px}
+.card{background:white;border-radius:17px;overflow:hidden;box-shadow:0 8px 25px #4a2e5812;transition:.3s}
+.card:hover{transform:translateY(-7px)}
+.card img{width:100%;height:210px;object-fit:cover}
+.info{padding:18px}
+.info h3{color:var(--morado);font-size:16px;margin-bottom:8px}
+.info p{font-size:12px;color:#777;line-height:1.7;min-height:60px}
+.price{display:block;color:var(--lila);font-weight:800;font-size:19px;margin:13px 0}
+.product-btn{display:block;text-align:center;background:var(--morado);color:white;text-decoration:none;padding:10px;border-radius:8px;font-size:12px}
+.product-btn:hover{background:var(--lila)}
+.contact{background:white}
+.contact-box{max-width:950px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-info,.contact-note{padding:30px;border-radius:18px}
+.contact-info{background:var(--morado);color:white}
+.contact-info h3,.contact-note h3{font-size:23px;margin-bottom:20px}
+.contact-info p{margin:15px 0;line-height:1.8;overflow-wrap:anywhere}
+.contact-info strong{color:#e1b8ed}
+.contact-note{background:var(--claro)}
+.contact-note h3{color:var(--morado)}
+.contact-note p{line-height:1.9;color:#655b6a}
+footer{background:#302039;color:white;text-align:center;padding:27px 15px;font-size:12px}
+footer span{color:#d8b8e5}
+@media(max-width:1000px){.products{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){
+ header{flex-direction:column;gap:15px}
+ nav{flex-wrap:wrap;justify-content:center;gap:13px}
+ .about,.contact-box{grid-template-columns:1fr}
+ .products{grid-template-columns:1fr}
+ section{padding:55px 6%}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="logo">TEJEDORES <span>DE IDEAS</span></div>
+ <nav>
+  <a href="index.html">Inicio</a>
+  <a href="nosotros.html">Nosotros</a>
+  <a href="#productos">Productos</a>
+  <a href="#contacto">Contacto</a>
+ </nav>
+</header>
+
+<section class="hero">
+ <div class="hero-content">
+  <p class="slogan">RECICLAR ES TRANSFORMAR EL FUTURO</p>
+  <h1>Pequeñas ideas, <span>grandes cambios</span></h1>
+  <p>Transformamos bolsas de plástico usadas en productos reutilizables, creativos y resistentes. Cada material puede tener una nueva oportunidad.</p>
+  <a href="#productos" class="btn">Descubre nuestros productos</a>
+ </div>
+</section>
+
+<section>
+ <div class="about">
+  <img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d9a?auto=format&fit=crop&w=1000&q=85" alt="Materiales reciclados">
+  <div>
+   <h2>Una nueva oportunidad para el plástico</h2>
+   <p>En Tejedores de Ideas creemos que los residuos pueden convertirse en recursos útiles. Por eso elaboramos bolsas recicladas que combinan creatividad, utilidad y compromiso ambiental.</p>
+   <p>Nuestro objetivo es promover hábitos responsables y demostrar que pequeñas acciones pueden generar grandes cambios.</p>
+   <a href="nosotros.html" class="btn">Conoce nuestra historia</a>
+  </div>
+ </div>
+</section>
+
+<section class="products-section" id="productos">
+ <div class="title">
+  <h2>Nuestros productos</h2>
+  <div class="line"></div>
+  <p>Creatividad y sostenibilidad en cada diseño.</p>
+ </div>
+
+ <div class="products">
+
+  <div class="card">
+   <img src="bolsa1.jpg" alt="Bolsa clásica">
+   <div class="info"><h3>Bolsa Ecológica Clásica</h3><p>Práctica y ligera para las compras cotidianas.</p><span class="price">S/ 8.00</span><a class="product-btn" href="#contacto">Consultar</a></div>
+  </div>
+
+  <div class="card">
+   <img src="bolsa2.jpg" alt="Bolsa moderna">
+   <div class="info"><h3>Bolsa Moderna</h3><p>Diseño atractivo para quienes buscan estilo y reutilización.</p><span class="price">S/ 10.00</span><a class="product-btn" href="#contacto">Consultar</a></div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=700&q=80" alt="Bolsa de compras">
+   <div class="info"><h3>Bolsa de Compras</h3><p>Alternativa reutilizable para transportar artículos.</p><span class="price">S/ 12.00</span><a class="product-btn" href="#contacto">Consultar</a></div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=700&q=80" alt="Bolsa multiuso">
+   <div class="info"><h3>Bolsa Multiuso</h3><p>Versátil y funcional para diferentes actividades.</p><span class="price">S/ 11.00</span><a class="product-btn" href="#contacto">Consultar</a></div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=700&q=80" alt="Bolsa creativa">
+   <div class="info"><h3>Bolsa Creativa</h3><p>Una propuesta original elaborada con materiales recuperados.</p><span class="price">S/ 13.00</span><a class="product-btn" href="#contacto">Consultar</a></div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" alt="Bolsa artesanal">
+   <div class="info"><h3>Bolsa Artesanal</h3><p>Elaborada con dedicación, creatividad y compromiso.</p><span class="price">S/ 15.00</span><a class="product-btn" href="#contacto">Consultar</a></div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1597633125097-5a2933f9c4f7?auto=format&fit=crop&w=700&q=80" alt="Bolsa juvenil">
+   <div class="info"><h3>Bolsa Juvenil</h3><p>Un estilo moderno y práctico para cada día.</p><span class="price">S/ 12.00</span><a class="product-btn" href="#contacto">Consultar</a></div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=700&q=80" alt="Bolsa reutilizable">
+   <div class="info"><h3>Bolsa Reutilizable</h3><p>Una opción cómoda para reducir bolsas desechables.</p><span class="price">S/ 14.00</span><a class="product-btn" href="#contacto">Consultar</a></div>
+  </div>
+
+ </div>
+</section>
+
+<section class="contact" id="contacto">
+ <div class="title">
+  <h2>Conecta con nosotros</h2>
+  <div class="line"></div>
+  <p>Estamos listos para compartir nuestras ideas contigo.</p>
+ </div>
+ <div class="contact-box">
+  <div class="contact-info">
+   <h3>Información de contacto</h3>
+   <p><strong>Emprendimiento:</strong><br>Tejedores de Ideas</p>
+   <p><strong>Responsable:</strong><br>Tu nombre completo</p>
+   <p><strong>Gmail:</strong><br>tucorreo@gmail.com</p>
+   <p><strong>Celular:</strong><br>+51 999 999 999</p>
+  </div>
+  <div class="contact-note">
+   <h3>¡El cambio comienza contigo!</h3>
+   <p>Al elegir nuestros productos, apoyas una iniciativa que une creatividad, emprendimiento y compromiso ambiental.</p>
+   <a class="btn" href="mailto:tucorreo@gmail.com">Escríbenos</a>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <p>© 2026 <span>Tejedores de Ideas</span> | Reciclamos plástico, tejemos ideas y cuidamos el planeta.</p>
+</footer>
+</body>
+</html>
